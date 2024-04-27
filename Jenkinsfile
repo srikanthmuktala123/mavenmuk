@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.8.5-alpine'  // Replace with your desired Docker image
+            image 'docker pull maven:latest-alpine'  // Replace with your desired Docker image
         }
     }
 
