@@ -32,7 +32,7 @@ pipeline {
             }
             steps {
                 script {
-                    def imageName = "your-app-name:latest"  // Replace with your image name
+                    def imageName = "maven:3.9.6-alpine"  // Replace with your image name
                     docker.withRegistry('your-docker-registry.com', 'docker-credentials-id') { // Replace with your registry and credentials ID (if using)
                         docker.build(imageName: imageName, '.')
                         docker.push(imageName)
